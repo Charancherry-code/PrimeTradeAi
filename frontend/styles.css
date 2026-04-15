@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+  color: #102030;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 12px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  padding: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.muted {
+  color: #5c6773;
+}
+
+form {
+  display: grid;
+  gap: 8px;
+}
+
+input,
+select,
+button {
+  padding: 9px;
+  border-radius: 6px;
+  border: 1px solid #ced3db;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: #1f6feb;
+  color: white;
+}
+
+button:hover {
+  background: #1456b8;
+}
+
+button.secondary {
+  background: #6c757d;
+  margin-left: 8px;
+}
+
+button.secondary:hover {
+  background: #5a6268;
+}
+
+.hint {
+  color: #6c757d;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #0f1720;
+  color: #d8e6ff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.task-item {
+  border: 1px solid #dce2eb;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 8px;
+}
