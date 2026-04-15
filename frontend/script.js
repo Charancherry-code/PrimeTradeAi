@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api/v1";
+const API_BASE = "https://prime-trade-ai-seven.vercel.app/";
 
 const logs = document.getElementById("logs");
 const profileEl = document.getElementById("profile");

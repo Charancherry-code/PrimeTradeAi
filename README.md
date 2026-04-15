@@ -271,20 +271,94 @@ npm test
 
 ## 🤝 Submission Information
 
-**Submitted by:** Backend Developer Intern Candidate  
+**Submitted by:** Banoth Charan 
 **Assignment:** PrimeTrade.ai Backend Developer Intern  
 **Date:** April 2026  
 **GitHub Repository:** [Link to repo]  
 
-### Contact
-For any questions about this implementation, please reach out via the submission form.
+
+## 🚀 Deployment Guide
+
+### Option 1: Free Cloud Deployment (Recommended)
+
+#### Backend → Railway (Free)
+
+```bash
+# Install Railway CLI
+npm install -g @railway/cli
+
+# Deploy
+cd backend
+railway login
+railway init
+railway up
+```
+
+**Environment Variables (Railway Dashboard):**
+```env
+MONGO_URI=mongodb+srv://user:pass@cluster.mongodb.net/primetrade
+JWT_SECRET=your_random_secret_key
+JWT_EXPIRES_IN=1h
+FRONTEND_ORIGIN=https://your-frontend.vercel.app
+NODE_ENV=production
+PORT=5000
+```
+
+#### Frontend → Vercel (Free)
+
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Deploy
+cd frontend
+vercel --prod
+```
+
+**Update API_BASE in `frontend/script.js`:**
+```javascript
+const API_BASE = "https://your-railway-app.up.railway.app/api/v1";
+```
 
 ---
 
-## 📄 License
+### Option 2: Docker Deployment (Production)
 
-This project is submitted as part of the PrimeTrade.ai internship application process.
+```bash
+# Build and run with Docker Compose
+docker-compose up -d
+```
+
+Services:
+- **Backend:** `http://localhost:5000`
+- **MongoDB:** `localhost:27017`
 
 ---
+
+### Option 3: VPS/EC2 Deployment
+
+```bash
+# On your server
+git clone <your-repo>
+cd primetrade.ai/backend
+npm install
+npm start
+```
+
+Use **PM2** for process management:
+```bash
+npm install -g pm2
+pm2 start src/server.js --name primetrade-api
+```
+
+---
+
+## 📊 Live Demo URLs (After Deployment)
+
+| Service | URL | Status |
+|---------|-----|--------|
+| API | `https://api.yourdomain.com` | ⬜ |
+| Frontend | `https://yourdomain.com` | ⬜ |
+| Swagger Docs | `https://api.yourdomain.com/api-docs` | ⬜ |
 
 **Thank you for reviewing my submission! 🚀**
