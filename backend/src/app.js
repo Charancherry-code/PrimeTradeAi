@@ -14,14 +14,9 @@ const sanitizeInput = require("./middlewares/sanitizeInput");
 const app = express();
 
 app.use(helmet());
-// Handle CORS origins
-const allowedOrigins = process.env.FRONTEND_ORIGIN === "*" 
-  ? true // Allow all origins
-  : [process.env.FRONTEND_ORIGIN || "http://127.0.0.1:5500", "http://localhost:5500", "http://127.0.0.1:5500"];
-
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: true, // Allow all origins temporarily
     credentials: true,
   })
 );
