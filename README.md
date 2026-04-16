@@ -357,8 +357,12 @@ pm2 start src/server.js --name primetrade-api
 
 | Service | URL | Status |
 |---------|-----|--------|
-| API | `https://api.yourdomain.com` | ⬜ |
-| Frontend | `https://yourdomain.com` | ⬜ |
-| Swagger Docs | `https://api.yourdomain.com/api-docs` | ⬜ |
+| API | `https://primetradeai-production-b634.up.railway.app` | |
+| Frontend | `https://prime-trade-ai-seven.vercel.app` | |
+| Swagger Docs | `https://primetradeai-production-b634.up.railway.app/api-docs` | |
+
+### Test Accounts
+- **Admin:** `admin@primetrade.ai` / `AdminPass123`
+- **User:** `user@primetrade.ai` / `UserPass123`
 
 **Thank you for reviewing my submission! 🚀**
