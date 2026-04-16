@@ -1,4 +1,4 @@
-const API_BASE = "https://prime-trade-ai-seven.vercel.app/";
+const API_BASE = "https://primetradeai-production-b634.up.railway.app/api/v1";
 
 const logs = document.getElementById("logs");
 const profileEl = document.getElementById("profile");
